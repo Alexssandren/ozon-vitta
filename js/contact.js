@@ -97,14 +97,21 @@
   }
 
   function buildMessage() {
-    var parts = [
-      "Olá, meu nome é " + nome.value.trim() + ".",
-      "Meu WhatsApp é " + telefone.value.trim() + ".",
-      "Assunto: " + assunto.value + "."
+    var lines = [
+      "Olá! Tudo bem?",
+      "",
+      "Gostaria de conversar com a Ozon Vitta.",
+      "",
+      "*Nome:* " + nome.value.trim(),
+      "*WhatsApp:* " + telefone.value.trim(),
+      "*Assunto:* " + assunto.value
     ];
     var extra = (mensagem.value || "").trim();
-    if (extra) parts.push(extra);
-    return parts.join(" ");
+    if (extra) {
+      lines.push("", "*Mensagem:*", extra);
+    }
+    lines.push("", "Aguardo o retorno. Obrigado(a)!");
+    return lines.join("\n");
   }
 
   function waUrl(text) {

@@ -24,7 +24,7 @@
       whatsapp: "Falar no WhatsApp",
       enviar: "Enviar no WhatsApp",
       preparar: "Preparar mensagem",
-      rapido: "Olá, quero agendar uma avaliação na Ozon Vitta."
+      rapido: "Olá! Tudo bem?\n\nGostaria de conversar com a Ozon Vitta e saber mais sobre uma avaliação.\n\nAguardo o retorno. Obrigado(a)!"
     },
     hero: {
       local: "Araranguá, SC",
