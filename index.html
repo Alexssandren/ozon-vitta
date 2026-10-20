@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ozon Vitta | Clínica Integrada Saúde e Estética em Araranguá</title>
+  <meta name="description" content="Ozon Vitta em Araranguá: saúde integrada e estética com plano personalizado. Agende pelo WhatsApp.">
+  <meta property="og:title" content="Ozon Vitta | Clínica Integrada Saúde e Estética em Araranguá">
+  <meta property="og:description" content="Ozon Vitta em Araranguá: saúde integrada e estética com plano personalizado. Agende pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="preload" href="assets/hero-mobile.webm?v=2" as="video" type="video/webm" media="(max-width: 719px)">
+  <script src="js/site-data.js"></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#topo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#topo">
+        <img src="assets/logo.webp" alt="Ozon Vitta" width="48" height="48">
+        <span>
+          <strong data-marca-nome>Ozon Vitta</strong>
+          <small data-marca-linha>Clínica Integrada Saúde e Estética</small>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" data-ancoras></nav>
+      <a class="btn btn-gold header-wa" href="#contato" data-wa-quick hidden>Falar no WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="topo" class="hero">
+      <div class="wrap hero-inner reveal">
+        <div class="hero-copy">
+          <p class="eyebrow" data-hero-local>Araranguá, SC</p>
+          <h1 data-hero-titulo>A transformação da sua saúde começa no cuidado</h1>
+          <p class="hero-lead" data-hero-texto>Plano personalizado com terapias integrativas, saúde celular e estética. Você é a prioridade.</p>
+          <video class="hero-mobile-img" src="assets/hero-mobile.webm?v=2" poster="assets/hero-mobile.webp" width="340" height="510" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contato" data-cta-conversar>Agendar consulta</a>
+            <a class="btn btn-ghost" href="#atendimento" data-cta-como>Como funciona</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servico" class="section">
+      <div class="wrap servico-grid reveal">
+        <div class="servico-copy">
+          <h2 data-servico-titulo>Cuidado integrado e personalizado</h2>
+          <p class="servico-lead" data-servico-texto>Um ambiente acolhedor com precisão científica, onde você e a sua individualidade vêm primeiro.</p>
+          <div data-servico-corpo>
+            <p>Na Ozon Vitta, unimos conforto e rigor clínico para atendimento de saúde e estética. O primeiro passo é um espaço focado em você e no seu bem-estar.</p>
+            <p>Não usamos protocolos prontos. Cada plano é montado a partir das suas necessidades, de forma integrada e única.</p>
+            <p>A equipe conta com a Dra. Laís Alves e a nutricionista Laura, em Nutrição Clínica e Funcional, para um cuidado completo do início ao fim da jornada.</p>
+          </div>
+        </div>
+        <img class="servico-img" src="assets/Cuidado.webp" alt="" width="640" height="480" decoding="async">
+      </div>
+    </section>
+
+    <section id="areas" class="section section-alt">
+      <div class="wrap">
+        <h2 class="reveal" data-areas-titulo>O que atendemos</h2>
+        <p class="section-lead reveal" data-areas-texto>Conheça nossos principais atendimentos.</p>
+        <div class="card-grid" data-areas-lista></div>
+      </div>
+    </section>
+
+    <section id="resultados" class="section">
+      <div class="wrap">
+        <h2 class="reveal" data-resultados-titulo>Resultados</h2>
+        <p class="section-lead reveal" data-resultados-texto>Antes e depois de pacientes da clínica.</p>
+        <div class="resultados-lista" data-resultados-lista></div>
+      </div>
+    </section>
+
+    <section id="atendimento" class="section section-alt">
+      <div class="wrap">
+        <h2 class="reveal" data-atendimento-titulo>Como começar</h2>
+        <p class="section-lead reveal" data-atendimento-texto>Três passos para o seu plano de cuidado.</p>
+        <ol class="steps" data-atendimento-passos></ol>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-intro reveal">
+          <h2 data-contato-titulo>Contato</h2>
+          <p data-contato-texto>Envie seus dados para agendar pelo WhatsApp.</p>
+        </div>
+        <form id="form-contato" class="contact-form reveal" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+            <p class="field-error" id="erro-nome" hidden></p>
+          </div>
+          <div class="field">
+            <label for="telefone">WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" inputmode="numeric" autocomplete="tel" required>
+            <p class="field-error" id="erro-telefone" hidden></p>
+          </div>
+          <div class="field">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione</option>
+            </select>
+            <p class="field-error" id="erro-assunto" hidden></p>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem <span class="optional">(opcional)</span></label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+          <div class="field check">
+            <label>
+              <input type="checkbox" id="autorizacao" name="autorizacao" required>
+              Autorizo o uso destes dados para resposta pelo WhatsApp.
+            </label>
+            <p class="field-error" id="erro-autorizacao" hidden></p>
+          </div>
+          <button type="submit" class="btn btn-gold" data-cta-enviar>Enviar no WhatsApp</button>
+          <p class="form-result" id="form-resultado" aria-live="polite" hidden></p>
+        </form>
+        <div class="contact-meta reveal">
+          <p class="contact-phone" data-contato-telefone>WhatsApp: (48) 99991-5748</p>
+          <p class="contact-address" data-contato-endereco>Av. Padre Antonio Luiz Dias, Vila São José, Araranguá - SC</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="duvidas" class="section section-alt">
+      <div class="wrap narrow">
+        <h2 class="reveal" data-duvidas-titulo>Dúvidas frequentes</h2>
+        <div class="faq" data-duvidas-lista></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-mark" data-marca-rodape>Ozon Vitta</p>
+          <p class="footer-tag">Clínica Integrada Saúde e Estética</p>
+        </div>
+        <nav class="footer-nav" data-ancoras-rodape aria-label="Seções"></nav>
+        <div class="footer-contact">
+          <p class="footer-phone" data-rodape-telefone>(48) 99991-5748</p>
+          <p class="footer-address" data-rodape-endereco>Av. Padre Antonio Luiz Dias, Vila São José, Araranguá - SC</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="privacidade.html">Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="#contato" data-wa-quick hidden aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M16.01 3C9.39 3 4 8.37 4 14.96c0 2.1.55 4.14 1.6 5.95L4 29l8.3-1.55A12.1 12.1 0 0 0 16.01 27C22.63 27 28 21.63 28 14.96 28 8.37 22.63 3 16.01 3zm6.86 17.04c-.29.81-1.43 1.49-2.34 1.69-.62.13-1.42.24-4.13-.89-3.47-1.44-5.7-4.95-5.88-5.18-.17-.23-1.42-1.89-1.42-3.61s.9-2.56 1.22-2.91c.31-.35.68-.44.91-.44h.65c.21 0 .49-.08.76.58.29.71.97 2.45 1.06 2.63.08.17.14.38.03.61-.11.23-.17.38-.34.58-.17.21-.36.46-.51.62-.17.17-.35.36-.15.7.2.35.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.35.17.55.14.75-.08.21-.23.86-.99 1.09-1.33.23-.35.46-.29.76-.17.31.11 1.95.92 2.28 1.09.34.17.56.26.64.4.09.15.09.85-.2 1.66z"/>
+    </svg>
+    <span class="wa-dot" aria-hidden="true"></span>
+  </a>
+</body>
+</html>
